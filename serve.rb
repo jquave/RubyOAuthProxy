@@ -8,7 +8,8 @@ require 'Net/HTTP'
 # To set this for the heroku server use this from the command line:
 # heroku config:set IG_CLIENT_SECRET=yourclientsecretabcdefg
 redirect_url = "swiftyphotos://did_log_in"
-client_id = "YOUR_CLIENT_ID"
+redirect_url = ENV['IG_REDIRECT_URL']
+client_id =  ENV['IG_CLIENT_ID']
 client_secret = ENV['IG_CLIENT_SECRET']
 
 get '/' do
