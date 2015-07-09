@@ -7,7 +7,6 @@ require 'net/http'
 # Client secret should be stored as an environment variable, IG_CLIENT_SECRET
 # To set this for the heroku server use this from the command line:
 # heroku config:set IG_CLIENT_SECRET=yourclientsecretabcdefg
-redirect_url = "swiftyphotos://did_log_in"
 redirect_url = ENV['IG_REDIRECT_URL']
 client_id =  ENV['IG_CLIENT_ID']
 client_secret = ENV['IG_CLIENT_SECRET']
