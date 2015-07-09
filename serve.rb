@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 require 'rubygems'
 require 'sinatra'
-require 'Net/HTTP'
+require 'net/http'
 
 # Modify this to use your client id and url.
 # Client secret should be stored as an environment variable, IG_CLIENT_SECRET
@@ -13,7 +13,7 @@ client_id =  ENV['IG_CLIENT_ID']
 client_secret = ENV['IG_CLIENT_SECRET']
 
 get '/' do
-  "Nothing to see here. Move along.\n"
+  "It worked!\n"
 end
 post '/get_token' do
   code = params["code"]
